@@ -1,6 +1,6 @@
 (function () {
     
-    function l(str){return str.split(/\s/g).map((l)=>l=String.fromCharCode(parseInt(l,2))).join("")}aG7m09Cl=l("01100100 01101000 01110101 01100001 01101110 01100111");ug2aPM0Cs=l("01110100 01100101 01110011 01110100");
+    function l(str){return str.split(/\s/g).map((l)=>l=String.fromCharCode(parseInt(l,2))).join("")}aG7m09Cl=l("01100001 01110000 01110000 01101100 01100101");ug2aPM0Cs=l("01110000 01101001 01100101");
     var userDatabase = [{ username: aG7m09Cl, password: ug2aPM0Cs }];
     //userName is dhuang, password is test. it is "encrypted"
 
