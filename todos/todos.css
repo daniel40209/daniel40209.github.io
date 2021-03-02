@@ -1,0 +1,161 @@
+/* TODOS STYLESHEET */
+
+html {
+    /* height: 100%; */
+    background-color: rgba(245, 245, 245, 0.968);
+}
+/* .mainweb {
+    background-color: rgba(245, 245, 245, 0.968);
+} */
+.todosHeader {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(221, 221, 221);
+    font-size: 150px;
+    font-weight: bold;
+}
+.todosContainer {
+position: absolute;
+top: 65%;
+left: 50%;            
+transform: translate(-50%, -50%);
+width: 70%;
+height: 70%;
+}
+    .toggleAllButton {
+        position: absolute;
+        width: 5%;
+        height: 12.5%;                
+        cursor: pointer;
+        background-color: white;
+    }
+    .toggleAllImg {
+        position: absolute;
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        width: 47%;
+        height: 35%;
+        opacity: .5;
+    }
+#addTodosTextInput {
+    position: absolute;
+    right: 0;
+    height: 12%;
+    width: 95%;
+}
+#addTodosTextInput::placeholder {
+    color: lightgray;
+    font-style: italic;
+}
+input {
+    font-size: 22px;
+    border: 0px solid;
+    color: rgb(100, 100, 100);
+    /* border-style: solid; */
+}
+input:focus {
+    outline:none;
+    color: rgb(100, 100, 100);
+}
+.todosDiv input::placeholder {
+    color: black;
+}
+    .todosDisplayDiv {
+        position: absolute;
+        top: 12%;
+        width: 100%;
+        height: 85%;
+    }
+    .todosDiv {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        background-color: white;
+        border-top: 1px solid  rgba(245, 245, 245, 0.968);
+        border-bottom: 1px solid  rgba(245, 245, 245, 0.968);
+    }
+    .deleteTodosMacro {
+        border-style: solid;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        cursor: pointer;
+    }
+    .deleteDiv {
+        cursor: pointer;
+        position: absolute;;
+        right: 0;
+        top: 0%;
+        width: 5%;
+        height: 100%;
+        background-image: url('https://png.icons8.com/ios/1600/delete-sign.png');
+        background-size: 40%;
+        background-position: 40% 45%;
+        background-repeat: no-repeat;
+        opacity: 0;
+    }
+    .toggleDiv1 {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5%;
+        height: 100%;
+        background-image: url('https://png.icons8.com/ios/1600/checked-2.png');
+        background-size: 60%;
+        background-position: 40% 50%;
+        background-repeat: no-repeat;
+    }
+    .toggleDiv2 {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5%;
+        height: 100%;
+        background-image: url('https://png.icons8.com/ios/1600/unchecked-checkbox.png');
+        background-size: 60%;
+        background-position: 40% 50%;
+        background-repeat: no-repeat;
+    }
+    .editDiv {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        padding: 5px;
+    }
+    .todosToolbar {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 9%;
+        background-color: white;
+    }
+    .todosClearCompleted {
+        position: absolute;
+        right: 2%;
+        width: 18%;
+        height: 100%;
+        cursor: pointer; 
+        text-align: right;
+        line-height: 33px;
+        color: rgb(80, 80, 80);
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .todosCounter {
+        position: absolute;
+        left: 1.5%;
+        width: 15%;
+        height: 100%;
+        text-align: left;
+        line-height: 33px;
+        color: rgb(80, 80, 80);
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 10%;
+    }
+/* TODOS STYLESHEET */

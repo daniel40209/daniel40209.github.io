@@ -1,0 +1,109 @@
+html, body, .mainweb {
+    height: 100%;
+    overflow-x: hidden; /* Prevents Sidebar from adding width (.mainweb is needed other for insurance(?)) */
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.mainweb {
+    position: relative;
+    transition: .5s;
+    margin-left: 26%;
+    }
+    .sidebarOpen {
+        /* z-index: 1; */
+        position: fixed;
+        left: 0%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        height: 80%;
+        width: 2.5%;
+        background-color: #EAE7DC;
+        border: none;
+        border-radius: 10px;
+        }
+        .sidebar {
+        position: fixed;
+        width: 26%;
+        top: 0;
+        left: 0;
+        background-color: #EAE7DC;
+        padding-top: 3%;    
+        overflow-x: hidden;
+        height: 100%;
+        transition: .5s;
+        /* z-index: 1; */
+        }
+        .sidebarClose {
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        font-size: 36px;
+        color: #818181;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        .sidebarClose:hover {
+        color: #444;
+        }
+            .logoContainer {
+            position: relative;
+            width: 35%;
+            height: 22%;
+            border-style: solid;
+            margin-top: 50px;
+            margin-left: 40px;
+            }
+                .logoImage {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                background-image: url("https://i.pinimg.com/564x/22/26/5e/22265e9fdd430edac1f775d970236cea.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                }
+                .logoSlide {
+                position: absolute;
+                width: 100%;
+                height: 0%;
+                background-color: #141f1f;
+                transition: .5s;
+                overflow: hidden;
+                top: 0;
+                }
+                .logotext {
+                /* white-space: nowrap; */
+                color: white;
+                font-size: 25px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
+                .logoContainer:hover .logoSlide {
+                height: 100%;
+                }
+            .logoHeader {
+            margin-top: -6px;
+            margin-left: 40px;
+            font-weight: bold;
+            color: #E85A4F;
+            font-size: 33px;
+            white-space: pre;
+            }
+            .logoDesc {
+            margin-top: -25px;
+            margin-left: 40px;
+            color: black;
+            line-height: 28px;
+            word-spacing: 2px;
+            font-size: 18px;
+            display: box;
+            white-space: pre;
+            }

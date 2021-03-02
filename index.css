@@ -1,0 +1,21 @@
+.blogmain a {  
+    position: relative;
+    display: block;
+    margin-top: 60px;
+    margin-left: 100px;
+    top: -8px;
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+}
+.blogmaindesc {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #8888;  
+    font-style: italic;
+}
+.blogmaindate {
+    margin-top: 20px;
+    color: #818181;
+    font-size: 18px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="holdemHandGenerator.css">
+    <link rel="stylesheet" type="text/css" href="..\lib\sidebar.css">
+    <title>Daniel Huang</title>
+</head>
+
+<body>
+    <div class="mainweb">
+        <section class='holdemApp'>
+            <h1 class='header'>Simple Hold'em Hand Generator</h1>
+            <section class='main'>
+                <div class='board'></div>
+                <div class='players'></div>
+            </section>
+            <section class='UI'>
+                <div class='showHand' onclick='App.showHand()'>Generate hands</div>
+                <div class='showBoard' onclick='App.showBoard()'>Generate board</div>
+                <div class='reset' onclick='App.reset()'>Reset</div>
+                <select class='numberOfPlayers'>
+                    <option value="1">1 Player</option>
+                    <option value="2">2 Players</option>
+                    <option value="3">3 Players</option>
+                    <option value="4">4 Players</option>
+                    <option value="5">5 Players</option>
+                    <option value="6">6 Players</option>
+                    <option value="7">7 Players</option>
+                    <option value="8">8 Players</option>
+                </select>
+            </section>
+        </section>
+    </div>
+<!--Sidebar-->
+<div class="sidebar">
+    <div class="logoContainer">
+        <img class="logoImage">
+        <div class="logoSlide"><a href="..\index.html">
+                <h1 class="logotext">Home</h1>
+            </a></div>
+    </div>
+    <div class="logoHeader">
+It's Dan
+    </div>
+    <div class="logoDesc">
+Ward Melville Highschool Senior.
+Enthusiastic to enrich myself with
+programming; I love the ability to 
+create and learn simultaneously.
+
+
+<small><b>Try hovering over the logo!</b></small>
+    </div>
+    <div class="sidebarClose">×</div>
+</div>
+<!--Sidebar-->
+    <script src="holdemHandGenerator.js"></script> 
+    <script src="..\lib\sidebar.js"></script>
+
+</body>
+
+</html>

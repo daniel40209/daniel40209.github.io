@@ -1,0 +1,99 @@
+body {
+    background-color: lightblue;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+.header {
+    text-align: center;
+}
+.card {
+    border-radius: 10px;
+    border-width: 2px;
+    float: left;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: solid;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70% 55%;
+    height: 120px;
+    width: 90px;
+    margin: 4px;
+    text-indent: 5px;
+}
+.board {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    border-radius: 9999px;
+    padding: 45px;
+    width: 510px;
+    height: 140px;
+    background-color: gray;
+}
+#spade {
+    background-image: url(https://img.icons8.com/metro/452/spades.png);
+}
+#heart {
+    background-image: url(https://img.icons8.com/color/2x/hearts.png);
+}
+#club {
+    background-image: url(https://img.icons8.com/metro/452/clubs.png);
+}
+#diamond {
+    background-image: url(https://img.icons8.com/color/2x/diamonds.png);
+}
+.players {
+    transform: translate(-50%);
+    left: 55%;
+    position: absolute;
+    bottom: 0;
+    width: 76.5%;
+    height: 56%;
+}
+    .playerHand, .winningHand {
+        float: left;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 20px;
+        width: 205px;
+        height: 131px;
+        background-color: rgb(218, 100, 22);
+    }
+    .winningHand {
+        /* outline-color: yellow;
+        outline-style: solid;
+        outline-width: thick; */
+        box-shadow: 0px 0px 25px yellow;
+    }
+.showHand, .showBoard, .reset, .numberOfPlayers {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    font-size: 30px;
+    width: 10%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 5px;
+}
+.showHand {
+    background-color: lightgreen;
+    left: 20px;
+}
+.showBoard {
+    background-color: yellow;
+    left: 20px;
+}
+.numberOfPlayers {
+    float: right;
+    right: 50px;
+}
+.reset {
+    /* text-align: initial; */
+    float: right;
+    right: 50px;
+    background-color: orange;
+}
