@@ -1,0 +1,74 @@
+{
+    "lists": [
+        {
+            "name": "Courses to Take",
+            "items": [
+                {
+                    "description": "CSE 114",
+                    "due_date": "2021-12-31",
+                    "status": "complete"
+                },
+                {
+                    "description": "CSE 215",
+                    "due_date": "2021-12-31",
+                    "status": "complete"
+                },
+                {
+                    "description": "AMS 301",
+                    "due_date": "2018-12-31",
+                    "status": "complete"
+                },
+                {
+                    "description": "CSE 214",
+                    "due_date": "2022-05-31",
+                    "status": "complete"
+                },
+                {
+                    "description": "CSE 216",
+                    "due_date": "2021-12-31",
+                    "status": "complete"
+                },
+                {
+                    "description": "CSE 220",
+                    "due_date": "2019-12-31",
+                    "status": "complete"
+                },
+                {
+                    "description": "AMS 310",
+                    "due_date": "2022-05-31",
+                    "status": "incomplete"
+                },
+                {
+                    "description": "CSE 316",
+                    "due_date": "2022-05-31",
+                    "status": "incomplete"
+                },
+                {
+                    "description": "CSE 303",
+                    "due_date": "2022-05-31",
+                    "status": "incomplete"
+                },
+                {
+                    "description": "CSE 380",
+                    "due_date": "2022-05-31",
+                    "status": "incomplete"
+                },
+                {
+                    "description": "CSE 373",
+                    "due_date": "2022-12-31",
+                    "status": "incomplete"
+                },
+                {
+                    "description": "CSE 381",
+                    "due_date": "2022-12-31",
+                    "status": "incomplete"
+                },
+                {
+                    "description": "CSE 416",
+                    "due_date": "2022-12-31",
+                    "status": "incomplete"
+                }
+            ]
+        }
+    ]
+}

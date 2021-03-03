@@ -1,0 +1,214 @@
+:root {
+    /* 
+        FIRST WE'LL DEFINE OUR SWATCHES, i.e. THE COMPLEMENTARY
+        COLORS THAT WE'LL USE TOGETHER IN MULTIPLE PLACES THAT
+        TOGETHER WILL MAKE UP A GIVEN THEME
+    */
+    --swatch-foundation:    #d9d6cc; /* USED FOR BODY BACKGROUND */
+    --swatch-primary:       #40454e; /* DOMINANT COLOR, USED FOR MOST BACKGROUNDS */
+    --swatch-complement:    #353a44; /* USED IN CONTRAST BACKGROUND FOR TOOLBARS */
+    --swatch-contrast:      #111111; /* USED IN MOUSE-OVER SELECTION OF LARGE ELEMENTS */
+    --swatch-accent:        #ffc819; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */  
+
+    --swatch-text:          #e9edf0; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */ 
+    --swatch-text-accent:   #ffc819; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */  
+
+    --font-primary:         'Lexend Exa', sans-serif;
+}
+
+.mainweb {
+    padding-left: 1.5%;
+    background-color: var(--swatch-primary);
+}
+
+#grid-container {
+    position:absolute;
+    width:100%;
+    min-height:100%;
+    display: grid;
+    padding: 1px;
+    grid-template-rows: 5% 95%;
+    grid-template-columns: 12% 88%;
+}
+
+#navbar {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    margin-bottom: .4%;
+    padding-top:.3%;
+    padding-left: .5%;
+}
+
+#left-sidebar {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#left-sidebar-header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.left-sidebar-header-text {
+    font-size: 19px;
+    padding-top: 30%;
+    padding-left: 7%;
+    font-weight:bold;
+}
+
+#undo-button {
+    opacity: .3;
+}
+
+#redo-button {
+    opacity: .3;
+    margin-left: 55%;
+}
+
+#left-sidebar-controls {
+    text-align: right;
+}
+
+#workspace {
+    grid-column: 2 span 1;
+    grid-row: 2 span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#todo-list-items-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item-card {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.task-col {
+    width:25%;
+    word-wrap: break-word; 
+}
+
+.task-col:hover {
+    background-color: var(--swatch-contrast);
+    cursor: pointer;
+}
+
+.due-date-col {
+    width:25%;
+}
+
+.due-date-col:hover {
+    background-color: var(--swatch-contrast);
+    cursor: pointer;
+}
+
+.status-col-complete {
+    width:25%;
+    color:#8ed4f8;
+}
+
+.status-col-complete:hover {
+    background-color: var(--swatch-contrast);
+    cursor: pointer;
+}
+
+.status-col-incomplete {
+    width:25%;
+    color:#f5bc75;
+}
+
+.status-col-incomplete:hover {
+    background-color: var(--swatch-contrast);
+    cursor: pointer;
+}
+
+.list-controls-col {
+    width:25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-item-control {
+    width: 24%;
+    text-align: center;
+}
+
+.list-item-control:hover {
+    cursor: pointer;
+    background-color: var(--swatch-contrast);
+}
+
+.editing {
+    width: 25%;
+    word-break: break-word;
+    background-color: var(--swatch-primary);
+    color: rgb(233,237,240);
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+.col-header {
+    cursor: pointer;
+    background-color: var(--swatch-complement);
+    width: 24%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-bottom: -1%;
+    margin-top: 1%;
+    margin-left: -1%;
+}
+
+.col-header:hover {
+    background-color: var(--swatch-contrast);
+}
+
+.todo_list_button {
+    background-color: var(--swatch-complement);
+    text-align: center;
+    width: 24%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    margin-bottom: -4%;
+    margin-top: 4%;
+}
+
+.todo_list_button:hover {
+    background-color: var(--swatch-contrast);
+}
+
+.disabled_todo_list_button {
+    background-color: var(--swatch-complement);
+    text-align: center;
+    width: 24%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    margin-bottom: -4%;
+    margin-top: 4%;
+
+    opacity: .3;
+}
+
+.disabled_todo_list_button:hover {
+    background-color: var(--swatch-complement);
+    opacity: .3;
+}
+
+.opague {
+    opacity: .3;
+}
+
+.listEditing {
+    width: 95%;
+    word-break: break-word;
+    background-color: var(--swatch-primary);
+    color: rgb(233,237,240);
+    font-family: 'Lexend Exa', sans-serif;
+}
